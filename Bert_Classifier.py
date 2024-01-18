@@ -433,31 +433,6 @@ bert_preds = bert_predict(bert_classifier, test_dataloader)
 
 print('Classification Report for BERT :\n', classification_report(y_test, bert_preds, target_names=sentiments))
 
-SiLU, 5e-5, 1 layer
-94.12,94.42
-SiLU, 5e-5, 2 layers
-94.10,94.32
-SiLU, ReLU, 5e-5 ,2 layers
-94.14,94.61
-SiLU, 6e-5, 2 layers
-94.68, 95.10
-SiLU, 6e-5, 1 layer
-94.73, 95.29
-SiLU, 7e-5, 1 layer
-94.75, 94.86
-SiLU, 6.5e-5, 1 layer
-94.41, 95.08
-SiLU, 6.2e-5, 1 layer
-94.56, 95.13
-SiLU, 5.9e-5, 1 layer
-94.37, 94.80
-SiLU, 6.05e-5, 1 layer
-94.59, 95.07
-SiLU, 1e-5, 1 layer
-93.48, 94.34
-# In[28]:
-
-
 # Save the model
 torch.save(bert_classifier.state_dict(), 'bert_classifier.pth')
 
