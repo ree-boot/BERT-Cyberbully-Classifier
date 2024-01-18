@@ -10,3 +10,5 @@ In the Dataset CSV file, labels are numbered as:
 3: gender  
 4: other  
 5: religion
+
+I have not used the 4th (other) category as it has many duplicates and removing duplicates cause huge imbalance in the dataset, many of these tweets are also ambiguous with non cyberbully ones.
