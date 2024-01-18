@@ -12,7 +12,7 @@ import numpy as np
 import regex as re
 from sklearn.model_selection import train_test_split
 
-# PyTorch LSTM
+# PyTorch
 import torch
 import torch.nn as nn
 import torch.optim as optim
